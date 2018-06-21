@@ -88,19 +88,6 @@ public class DungeonFactoryTest {
 		third.addRandom(DungeonRoom.BLAZE, 5);
 		
 		assert(third.equals(merge));
-		
-		base.addSingle(DungeonRoom.CREEPER, 3);
-		merge = new DungeonFactory(base, other);
-		
-		assert(!third.equals(merge));
-		
-		third.addSingle(DungeonRoom.CREEPER, 1);
-		
-		assert(!third.equals(merge));
-		
-		third.addSingle(DungeonRoom.CREEPER, 2);
-		
-		assert(third.equals(merge));
 	}
 	
 	@Test
