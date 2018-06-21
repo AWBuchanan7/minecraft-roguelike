@@ -27,7 +27,6 @@ import greymerk.roguelike.dungeon.rooms.DungeonReward;
 import greymerk.roguelike.dungeon.rooms.DungeonStorage;
 import greymerk.roguelike.dungeon.rooms.DungeonTreetho;
 import greymerk.roguelike.dungeon.rooms.DungeonsBrick;
-import greymerk.roguelike.dungeon.rooms.DungeonsCreeperDen;
 import greymerk.roguelike.dungeon.rooms.DungeonsCrypt;
 import greymerk.roguelike.dungeon.rooms.DungeonsEnchant;
 import greymerk.roguelike.dungeon.rooms.DungeonsEnder;
@@ -45,13 +44,13 @@ import greymerk.roguelike.dungeon.rooms.DungeonsWood;
 
 public enum DungeonRoom {
 	
-	BRICK, CREEPER, CRYPT, ENCHANT, ENDER, FIRE, MUSIC, NETHER, NETHERFORT, PIT, PRISON,
+	BRICK, CRYPT, ENCHANT, ENDER, FIRE, MUSIC, NETHER, NETHERFORT, PIT, PRISON,
 	SLIME, SMITH, SPIDER, CAKE, LAB, CORNER, MESS, ETHO, ENIKO, BTEAM, OSSUARY, OBSIDIAN,
 	AVIDYA, STORAGE, ASHLEA, FIREWORK, BEDROOM, REWARD, LIBRARY, PYRAMIDTOMB, DARKHALL,
 	TREETHO, LINKER, LINKERTOP, PYRAMIDSPAWNER, PYRAMIDCORNER, BLAZE;
 	
 	public static DungeonRoom[] intersectionRooms = {
-			BRICK, CREEPER, CRYPT, ENDER, FIRE, MUSIC, NETHER, NETHERFORT, PIT, PRISON,
+			BRICK, CRYPT, ENDER, FIRE, MUSIC, NETHER, NETHERFORT, PIT, PRISON,
 			SLIME, SPIDER, CAKE, LAB, MESS, OSSUARY, OBSIDIAN, STORAGE, PYRAMIDTOMB,
 			DARKHALL, PYRAMIDSPAWNER, PYRAMIDCORNER, BLAZE
 		};
@@ -63,7 +62,6 @@ public enum DungeonRoom {
 	public static IDungeonRoom getInstance(DungeonRoom choice){
 		switch(choice){
 		case BRICK: return new DungeonsBrick();
-		case CREEPER: return new DungeonsCreeperDen();
 		case CRYPT: return new DungeonsCrypt();
 		case ENCHANT: return new DungeonsEnchant();
 		case ENDER: return new DungeonsEnder();

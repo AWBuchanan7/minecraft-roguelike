@@ -8,7 +8,7 @@ import greymerk.roguelike.worldgen.IWorldEditor;
 
 public enum Tower {
 
-	ROGUE, ENIKO, ETHO, PYRAMID, JUNGLE, WITCH, HOUSE, BUNKER, RUIN, HOLE;
+	ROGUE, ENIKO, ETHO, PYRAMID, JUNGLE, WITCH, BUNKER, RUIN, HOLE;
 	
 	public static ITower get(Tower type){
 		
@@ -19,7 +19,6 @@ public enum Tower {
 		case PYRAMID: return new PyramidTower();
 		case JUNGLE: return new JungleTower();
 		case WITCH: return new WitchTower();
-		case HOUSE: return new HouseTower();
 		case BUNKER: return new BunkerTower();
 		case RUIN: return new RuinTower();
 		case HOLE: return new HoleTower();

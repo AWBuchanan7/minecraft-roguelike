@@ -37,7 +37,6 @@ public class SettingsRooms extends DungeonSettings{
 				factory = new DungeonFactory();
 				factory.addSingle(DungeonRoom.OSSUARY);
 				factory.addSingle(DungeonRoom.CRYPT);
-				factory.addSingle(DungeonRoom.CREEPER);
 				factory.addSingle(DungeonRoom.FIRE);
 				factory.addSingle(DungeonRoom.SPIDER);
 				factory.addSingle(DungeonRoom.PRISON);
@@ -52,7 +51,6 @@ public class SettingsRooms extends DungeonSettings{
 				factory.addSingle(DungeonRoom.CRYPT);
 				factory.addRandom(DungeonRoom.PRISON, 3);
 				factory.addRandom(DungeonRoom.SLIME, 5);
-				factory.addRandom(DungeonRoom.CREEPER, 1);
 				factory.addRandom(DungeonRoom.SPIDER, 1);
 				factory.addRandom(DungeonRoom.PIT, 1);
 				break;

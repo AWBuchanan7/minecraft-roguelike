@@ -33,7 +33,7 @@ public class SettingsForestTheme extends DungeonSettings{
 		biomes.add(BiomeDictionary.Type.FOREST);
 		this.criteria.setBiomeTypes(biomes);
 		
-		this.towerSettings = new TowerSettings(Tower.HOUSE, Theme.getTheme(Theme.HOUSE));
+		this.towerSettings = new TowerSettings(Tower.RUIN, Theme.getTheme(Theme.CAVE));
 				
 		for(int i = 0; i < 5; ++i){
 			
